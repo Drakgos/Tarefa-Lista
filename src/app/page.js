@@ -21,23 +21,26 @@ export default function Home() {
         () => { setName(input)}
 
     return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <h2>Olá {name}</h2>
+        <div className={styles.main}>
+            <div className={styles.card}>
+                <h2 className={styles.greeting}>Olá {name}</h2>
 
-          <button className={styles.btnCust} onClick={
-              () => {setName("MUNDO!!!!")}
-          }>
-              Clica em mim ;)
-          </button>
+                <button className={styles.btnGhost} onClick={() => setName("MUNDO!!!!")}>
+                    Clica em mim ;)
+                </button>
 
-          <button className={styles.btnCust} onClick={atualizaMensagemOla}>
-              Atualiza mensagem Olá
-          </button>
+                <input
+                    className={styles.inputCust}
+                    value={input}
+                    onChange={(evt) => setInput(evt.target.value)}
+                    placeholder="Escreve um nome..."
+                />
 
-          <input value={input}
-                 onChange={(evt) => setInput(evt.target.value)} />
-      </main>
-    </div>
+                <button className={styles.btnPrimary} onClick={atualizaMensagemOla}>
+                    Atualizar mensagem Olá
+                </button>
+            </div>
+        </div>
+
   );
 }

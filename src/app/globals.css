@@ -1,9 +1,9 @@
-.mainPage{
+.mainPage {
   margin-left: 10vw;
   margin-right: 10vw;
   height: 90vh;
   padding: 10px;
-  background-color: lightgray;
+  /* remove o background-color: lightgray daqui */
 }
 
 ul {
@@ -14,9 +14,7 @@ ul {
   background-color: #333333;
 }
 
-ul li {
-  float: left;
-}
+ul li { float: left; }
 
 ul li a {
   display: block;
@@ -26,6 +24,4 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
-  background-color: #111111;
-}
+ul li a:hover { background-color: #111111; }
