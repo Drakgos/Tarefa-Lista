@@ -23,6 +23,7 @@ export default function Home() {
     return (
         <div className={styles.main}>
             <div className={styles.card}>
+                <h2 className={styles.greeting}> Gonçalo Sousa Santos , Nº31838</h2>
                 <h2 className={styles.greeting}>Olá {name}</h2>
 
                 <button className={styles.btnGhost} onClick={() => setName("MUNDO!!!!")}>
